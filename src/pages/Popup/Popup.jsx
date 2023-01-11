@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from '../../assets/img/logo.svg';
-import bannerImg from '../../assets/img/popup.svg';
+import bannerImg from '../../assets/img/popupBannerLoginCheck.svg';
+import loginImg from '../../assets/img/popupLoginBanner.svg';
+import signupImg from '../../assets/img/popupSignupBanner.svg';
+import LoggedImg from '../../assets/img/popupLoggedBanner.svg';
 import ErrorMsg from '../../components/ErrorMsg';
 import Header from '../../components/header';
 // import Greetings from '../../containers/Greetings/Greetings';
@@ -121,12 +123,32 @@ const LogginPanel = (props) => {
           spacing={2}
           sx={{}}
         >
-          <Grid item lg={12} sm={12} sx={{ marginTop: '2rem' }}>
+          <Grid
+            item
+            lg={12}
+            sm={12}
+            xs={12}
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              alignSelf: 'center',
+              width: '150px',
+              height: '150px',
+            }}
+          >
+            <img
+              src={loginImg}
+              alt="garrasi logo"
+              style={{ width: '100%', height: '100%' }}
+            />
+          </Grid>
+          <Grid item lg={12} sm={12} xs={12} sx={{}}>
             <Typography variant="h4" component="h1" sx={{ color: '#fff' }}>
               Login
             </Typography>
           </Grid>
-          <Grid item lg={12}>
+          <Grid item lg={12} xs={12} sm={12}>
             <Grid container spacing={2}>
               <Grid item lg={12} sx={{ width: '100%' }}>
                 <TextField
@@ -170,8 +192,34 @@ const LoggedPanel = (props) => {
     <div className="App">
       <Header />
       <section className="content">
-        <Grid container alignItems="center" justifyContent={'center'} sx={{}}>
-          <Grid item lg={12} sm={12} sx={{ marginTop: '2rem' }}>
+        <Grid
+          container
+          alignItems="center"
+          justifyContent={'center'}
+          spacing={2}
+          sx={{}}
+        >
+          <Grid
+            item
+            lg={12}
+            sm={12}
+            xs={12}
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              alignSelf: 'center',
+              width: '80px',
+              height: '80px',
+            }}
+          >
+            <img
+              src={LoggedImg}
+              alt="garrasi logo"
+              style={{ width: '100%', height: '100%' }}
+            />
+          </Grid>
+          <Grid item lg={12} sm={12} sx={{}}>
             <Typography variant="h5" component="h1" sx={{ color: '#fff' }}>
               Hello, {UserData.name}
             </Typography>
@@ -229,9 +277,29 @@ const SignUpPanel = (props) => {
           spacing={2}
           sx={{}}
         >
-          <Grid item lg={12} sm={12} sx={{ marginTop: '2rem' }}>
+          <Grid
+            item
+            lg={12}
+            sm={12}
+            xs={12}
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              alignSelf: 'center',
+              width: '80px',
+              height: '80px',
+            }}
+          >
+            <img
+              src={signupImg}
+              alt="garrasi logo"
+              style={{ width: '100%', height: '100%' }}
+            />
+          </Grid>
+          <Grid item lg={12} sm={12} sx={{}}>
             <Typography variant="h4" component="h1" sx={{ color: '#fff' }}>
-              Login
+              Register Now
             </Typography>
           </Grid>
           <Grid item lg={12}>
@@ -270,7 +338,7 @@ const SignUpPanel = (props) => {
                   sx={{ backgroundColor: '#2f7', width: '80%', color: '#fff' }}
                   onClick={() => register({ email, password, name })}
                 >
-                  Login
+                  Register
                 </Button>
               </Grid>
             </Grid>

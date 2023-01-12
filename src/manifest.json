@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Garrasi reviews",
-  "description": "A chrome extension boilerplate built with React 17, Webpack 5, and Webpack Dev Server 4",
+  "description": "Review extenstion that gets reviews for websites and products on the go",
   "options_page": "options.html",
   "background": { "service_worker": "background.bundle.js" },
   "action": {

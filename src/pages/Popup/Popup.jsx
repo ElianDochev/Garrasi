@@ -379,7 +379,7 @@ const Popup = () => {
   } else if (isAuthed === 'wrong password') {
     return (
       <ErrorMsg
-        msg="Wrong password"
+        msg="Wrong password and/or email"
         isAuthed={isAuthed}
         ChangeIsAuthed={ChangeIsAuthed}
       />

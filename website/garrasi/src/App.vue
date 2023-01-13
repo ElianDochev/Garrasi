@@ -16,6 +16,7 @@
         <img v-for="n in 4" :key="n" src="./assets/star.png" alt="star">
       </div>
     </div>
+
     <div>
       <img src="./assets/avis1.png" alt="profile image">
       <p>"J'ai utilisé Garrasi vérifier si un site web était fiable et heureusement cela ma evité de me faire arnaquer !" - Séverine</p>
@@ -38,8 +39,8 @@ export default {
     HelloWorld
   }
 }
-</script>
 
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
